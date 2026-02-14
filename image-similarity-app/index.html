@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片相似度对比</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>图片相似度对比</h1>
+        <div class="upload-section">
+            <div class="upload-container">
+                <h2>图片 1</h2>
+                <input type="file" id="image1" accept="image/*">
+                <canvas id="canvas1" class="preview"></canvas>
+            </div>
+            <div class="upload-container">
+                <h2>图片 2</h2>
+                <input type="file" id="image2" accept="image/*">
+                <canvas id="canvas2" class="preview"></canvas>
+            </div>
+        </div>
+        <button id="compareBtn">对比相似度</button>
+        <div id="result" class="result"></div>
+        <div id="heatmap" class="heatmap"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
